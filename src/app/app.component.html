@@ -1,0 +1,69 @@
+<div id="app-root">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="padding: 1.5rem 1rem; font-size: 1.25rem;">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#" style="font-size: 1.75rem; font-weight: bold; width: 50%; color: rgb(11, 11, 11);">
+        <img src="assets/logo.png" alt="Logo" style="width: 100px; height: 100px; margin-right: 15px;">
+        <div>
+          <span style="font-family: 'Arial', sans-serif; font-size: 1.5rem;">Edhas Polymer Private Limited</span><br>
+          <a class="lead text-muted mb-4" style="font-size: 1rem; color: #69bdc4; text-decoration: none;">
+            Your one-stop solution for high-quality polymer products.
+          </a>
+           </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/products" routerLinkActive="active">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+
+
+<footer class="bg-dark text-center text-lg-start mt-5">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Edhas Polymers Private Limited</h5>
+        <p>Providing high-quality polymer products since 1995. Your trusted partner in polymer solutions.</p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Quick Links</h5>
+        <ul class="list-unstyled">  <li><a href="/" class="text-light">Home</a></li>
+          <li><a href="/about" class="text-light">About</a></li>
+          <li><a href="/contact" class="text-light">Contact</a></li>
+          <li><a href="/products" class="text-light">Products</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-0">
+        <h5 class="text-uppercase">Contact</h5>
+        <ul class="list-unstyled mb-0">
+          <li><a href="#" class="text-light">Address: Survey No.1846/1/1, Nisarg Royale Industrial Park, Vatar<br> Vapi, Valsad-396191. Gujarat</a></li>  
+          <li><a href="mailto:info@edhaspolymer.com" class="text-light">Email: edhaspolymerspvtltd@gmail.com</a></li>
+          <li><a href="tel:1234567890" class="text-light">Mobile: 9537531317 / 9712465667</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

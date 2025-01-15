@@ -1,0 +1,9 @@
+.navbar {
+    transition: all 0.3s ease;
+  }
+  
+  .navbar.scrolled {
+    padding: 0.5rem 1rem;
+    background-color: #f8f9fa;
+  }
+  

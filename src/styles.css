@@ -1,0 +1,144 @@
+/* General styles for the application */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#app-root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand img {
+    border-radius: 50%;
+  }
+  
+  .carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  h1, h2 {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #343a40;
+    color: #17a2b8;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+  }
+  footer a {
+    color: #17a2b8;
+    text-decoration: none;
+  }
+
+  footer p {
+    color: #17a2b8;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* General Input Styling */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px 20px; /* Comfortable padding */
+  margin-bottom: 20px; /* Space between input fields */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 6px; /* Slightly rounded corners */
+  font-size: 16px; /* Larger font for readability */
+  color: #333; /* Dark text for better contrast */
+  background-color: #f9f9f9; /* Subtle background for inputs */
+  transition: all 0.3s ease-in-out; /* Smooth transition for focus effects */
+  box-sizing: border-box; /* Includes padding and border in width */
+}
+
+/* Placeholder Styling */
+input::placeholder,
+textarea::placeholder {
+  color: #999; /* Subtle placeholder color */
+  font-style: italic; /* Differentiates placeholder text */
+  font-size: 15px;
+}
+
+/* Focus State for Inputs */
+input:focus,
+textarea:focus {
+  border-color: #007bff; /* Highlight border on focus */
+  background-color: #fff; /* Brighter background on focus */
+  outline: none; /* Removes default browser outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Adds focus glow */
+}
+
+/* Larger Textarea for Better Usability */
+textarea {
+  resize: vertical; /* Allows resizing only vertically */
+  min-height: 120px; /* Ensures adequate height for textarea */
+}
+
+/* Input Container Spacing */
+.input-container {
+  padding: 0 15px; /* Adds space to the left and right of the container */
+}
+
+.card-body {
+  height: 200px; /* Example height - adjust as needed */
+  overflow-y: auto; /* Add vertical scrollbar if content overflows */
+}
+
+/* Add this CSS to your stylesheet or in a <style> tag */
+.img-height {
+  height: 200px; /* Set your desired height */
+  object-fit: cover;
+}
