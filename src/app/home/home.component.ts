@@ -5,13 +5,16 @@ import { Component } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
+
+
+
 export class HomeComponent {
   activeSlideIndex = 0;
    // Images for the carousel
    carouselImages = [
   
-    { src: 'assets/p3.jpg', alt: 'Third Slide' },
-    { src: 'assets/p4.jpg', alt: 'Fourth Slide' },
+    { src: 'assets/q1.jpg', alt: 'Third Slide' },
+    { src: 'assets/q2.jpg', alt: 'Fourth Slide' },
     { src: 'assets/p5.jpg', alt: 'Fifth Slide' },
     { src: 'assets/p6.jpg', alt: 'Sixth Slide' },
     { src: 'assets/p7.jpg', alt: 'Seventh Slide'},
@@ -20,16 +23,39 @@ export class HomeComponent {
     { src: 'assets/p2.jpg', alt: 'Second Slide' }
   ];
 
-  prevSlide(): void {
-    this.activeSlideIndex =
-      (this.activeSlideIndex - 1 + this.carouselImages.length) % this.carouselImages.length;
+  private intervalId: any;
+
+  ngOnInit() {
+    this.startCarousel();
   }
 
-  nextSlide(): void {
+  ngOnDestroy() {
+    this.stopCarousel(); // Prevent memory leaks
+  }
+
+  startCarousel() {
+    this.intervalId = setInterval(() => {
+      this.nextSlide();
+    }, 1500); // 1.5 seconds
+  }
+
+  stopCarousel() {
+    clearInterval(this.intervalId);
+  }
+
+  nextSlide() {
     this.activeSlideIndex = (this.activeSlideIndex + 1) % this.carouselImages.length;
   }
 
-  setActiveSlide(index: number): void {
-    this.activeSlideIndex = index;
+  prevSlide() {
+    this.activeSlideIndex = (this.activeSlideIndex - 1 + this.carouselImages.length) % this.carouselImages.length;
   }
+
+    setActiveSlide(index: number) {
+    this.activeSlideIndex = index;
+    this.stopCarousel(); // Stop automatic sliding when user interacts
+    this.startCarousel();// Restart after the user changes the slide
+  }
+
+  
 }

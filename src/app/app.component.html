@@ -1,11 +1,11 @@
 <div id="app-root">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="padding: 1.5rem 1rem; font-size: 1.25rem;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light color sticky-top " style="padding: 1.5rem 1rem; font-size: 1.25rem;">
     <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center" href="#" style="font-size: 1.75rem; font-weight: bold; width: 50%; color: rgb(11, 11, 11);">
         <img src="assets/logo.png" alt="Logo" style="width: 100px; height: 100px; margin-right: 15px;">
         <div>
-          <span style="font-family: 'Arial', sans-serif; font-size: 1.5rem;">Edhas Polymer Private Limited</span><br>
+          <span style="font-family: 'Arial', sans-serif; font-size: 1.5rem;">Edhas Polymers Private Limited</span><br>
           <a class="lead text-muted mb-4" style="font-size: 1rem; color: #69bdc4; text-decoration: none;">
             Your one-stop solution for high-quality polymer products.
           </a>
@@ -16,20 +16,20 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/products" routerLinkActive="active">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
-          </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link custom-nav-link" routerLink="/" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link custom-nav-link" routerLink="/about" routerLinkActive="active">About</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link custom-nav-link" routerLink="/products" routerLinkActive="active">Products</a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link custom-nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+            </li>
         </ul>
-      </div>
+    </div>
     </div>
   </nav>
 

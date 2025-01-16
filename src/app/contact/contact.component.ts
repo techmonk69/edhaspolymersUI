@@ -6,10 +6,33 @@ import { FormsModule } from '@angular/forms'; // Import FormsModule
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css'],
 })
+
 export class ContactComponent {
-  onSubmit(form: any): void {
-    console.log('Form Submitted', form);
-    alert('Thank you for contacting us!');
+  formData = {
+    name: '',
+    phone: '',
+    email: '',
+    message: ''
+  };
+
+  showAlert: boolean = false;
+
+  onSubmit() {
+    // Display success alert
+    this.showAlert = true;
+
+    // Reset form data
+    this.formData = {
+      name: '',
+      phone: '',
+      email: '',
+      message: ''
+    };
+
+    // Auto-hide alert after 5 seconds
+    setTimeout(() => {
+      this.showAlert = false;
+    }, 5000);
   }
 }
 
