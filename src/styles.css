@@ -91,6 +91,32 @@ body {
   footer a:hover {
     text-decoration: underline;
   }
+  
+        
+  .tab-pane .d-flex {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+}
+.tab-pane .text-column {
+    width: 50%;
+    padding-right: 15px;
+    text-align: left;
+}
+.tab-pane .image-column {
+    width: 50%;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+}
+.tab-pane img {
+    max-width: 100%; /* Ensure image doesn't exceed container width */
+    height: auto;
+    border-radius: 8px;
+}
+.card{
+    border: 1px solid #dee2e6; /* Add a light gray border */
+    border-radius: 0.375rem; /* Add rounded corners */
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15); /* Add a subtle shadow */
+}
 
   /* General Input Styling */
 input[type="text"],
