@@ -108,7 +108,11 @@
       }
     }
   },
-  "defaultProject": "edhaspolymerUI"
+  "defaultProject": "edhaspolymerUI",
+
+"baseHref": "/EdhasProject/"
+
+
 
   
 

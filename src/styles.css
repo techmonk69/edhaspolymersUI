@@ -44,6 +44,10 @@ body {
     height: 500px;
     object-fit: cover;
   }
+
+  .carouselImages {
+    height: 500px;
+  }
   
   h1, h2 {
     font-weight: bold;
@@ -149,8 +153,8 @@ textarea {
 }
 
 .carousel-wrapper {
-  height: auto;
-  width: 90%; /* Take up 90% of the screen width by default */
+  height: 100%;
+  width: 100%; /* Take up 90% of the screen width by default */
   margin: 0 auto;
 }
 
@@ -190,9 +194,13 @@ textarea {
   }
 }
 
+.navbar {
+  height: 120px; /* Example height */
+}
+
 /* Example Navbar Background (if you want to customize it) */
 .navbar {
-  background-color: #333; /* Dark background example */
+  background-color: #464444; /* Dark background example */
 }
 
 /* ... (other CSS) ... */
